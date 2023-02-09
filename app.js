@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const sequelize = require("./database/sqlDatabase");
 // const { urlencoded } = require("body-parser");
 
+const expenseRouter = require("./routes/expenseRouter");
 const signUpRouter = require("./routes/signUpRouter");
 const signInRouter = require('./routes/signInRouter')
 const app = express();
@@ -11,6 +12,7 @@ const app = express();
 
 app.use(signUpRouter);
 app.use(signInRouter);
+app.use(expenseRouter);
 
 sequelize
   .sync()
