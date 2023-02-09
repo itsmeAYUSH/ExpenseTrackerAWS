@@ -1,4 +1,3 @@
-
 {
   "name": "fullstack-expensetracker",
   "version": "1.0.0",
@@ -15,6 +14,7 @@
     "nodemon": "^1.18.3"
   },
   "dependencies": {
+    "bcrypt": "^5.1.0",
     "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
